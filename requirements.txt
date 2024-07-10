@@ -1,6 +1,6 @@
 pandas
-scikit-learn
-feature engine
+scikit-learn==1.3.2
+feature-engine
 flask
 flask-wtf
-gunicorn #used by render
+gunicorn
