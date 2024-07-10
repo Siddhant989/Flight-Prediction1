@@ -1,5 +1,4 @@
 import pandas as pd
-import pickle
 import joblib
 
 from flask import Flask,url_for,render_template,get_flashed_messages
@@ -16,7 +15,6 @@ def home():
     return render_template("home.html",title="Home")
 
 model=joblib.load("model.joblib")
-pipe=pickle.load(open('pipe.pkl','rb'))
 
 
 @app.route("/predict",methods=["GET","POST"])
