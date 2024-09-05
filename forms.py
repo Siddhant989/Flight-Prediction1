@@ -51,7 +51,7 @@ class InputForm(FlaskForm):
         validators=[DataRequired()]
     )
     total_stops=IntegerField(
-        label="Total Stops",
+        label="Total Stops(Please Include intial station also)",
         validators=[DataRequired()]
     )
     additional_info=SelectField(

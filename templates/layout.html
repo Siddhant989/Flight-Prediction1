@@ -4,6 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #ffdddd;
+            color: #900;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        /* Form styles */
+        form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            border: 40 px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+
+        .submit {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit:hover {
+            background-color: #218838;
+        }
+
+        .redirect {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .redirect a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .redirect a:hover {
+            text-decoration: underline;
+        }
+        
+        .output {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Specific styles for each class */
+        .airline { 
+            background-color: yellow;
+         }
+        /* .date-of-journey { Specific styles for date of journey section } */
+        /* .source { Specific styles for source section } */
+        /* .destination { Specific styles for destination section } */
+        /* .dep-time { Specific styles for departure time section } */
+        /* .arrival-time { Specific styles for arrival time section } */
+        /* .duration { Specific styles for duration section } */
+        /* .total-stops { Specific styles for total stops section } */
+        /* .additional-info { Specific styles for additional info section } */ 
+    </style>
 </head>
 <body>
     <h1>Welcome to the {{ title }} page!</h1>
@@ -13,7 +120,6 @@
                 {% for message in messages %}
                     <li>{{ message }}</li>
                 {% endfor %}
-                
             </ul>
         {% endif %}
     {% endwith %}
